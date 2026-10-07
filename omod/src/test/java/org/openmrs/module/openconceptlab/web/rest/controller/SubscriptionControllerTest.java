@@ -64,18 +64,21 @@ public class SubscriptionControllerTest extends MainResourceControllerTest{
     }
 
     @Override
+    @Test
     public void shouldGetDefaultByUuid() throws Exception {
         Context.getService(ImportService.class).saveSubscription(generateSubscription());
         super.shouldGetDefaultByUuid();
     }
 
     @Override
+    @Test
     public void shouldGetRefByUuid() throws Exception {
         Context.getService(ImportService.class).saveSubscription(generateSubscription());
         super.shouldGetRefByUuid();
     }
 
     @Override
+    @Test
     public void shouldGetFullByUuid() throws Exception {
         Context.getService(ImportService.class).saveSubscription(generateSubscription());
         super.shouldGetFullByUuid();
